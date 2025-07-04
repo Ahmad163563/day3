@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/gestures.dart';
 
 class VerificationScreen extends StatefulWidget {
   const VerificationScreen({super.key});
@@ -37,6 +38,7 @@ class _VerificationScreenState extends State<VerificationScreen> {
           ),),
           SizedBox(height: 15,),
           Text('Dear user your account has been created\nsuccessfully.Continue to start using app',style: TextStyle(fontSize: 13,fontWeight: FontWeight.w400,color: Color(0xCC1C1939)),),
+          SizedBox(height: 150,),
           TextButton(onPressed: (){}, child: Container(
             height: 46,
             width: 296,
@@ -45,9 +47,44 @@ class _VerificationScreenState extends State<VerificationScreen> {
               color: Color(0xff00AEEF)
             ),
             child: Center(
-              child: Text(''),
+              child: Text('Continue',style: TextStyle(
+                fontWeight: FontWeight.w700,
+                fontSize: 13,
+                color: Colors.white
+              ),),
             ),
-          ))
+          )),
+          SizedBox(height: 30,),
+          RichText(
+            textAlign: TextAlign.center,
+            text: TextSpan(
+              style: TextStyle(color: Colors.black, fontSize: 16),
+              children: [
+                TextSpan(text: 'by clicking start, you agree to our '),
+                TextSpan(
+                  text: 'Privacy Policy',
+                  style: TextStyle(
+                    color: Colors.blue,
+                    decoration: TextDecoration.underline,
+                  ),
+                  recognizer: TapGestureRecognizer()..onTap = () {
+                    // Handle Privacy Policy tap
+                  },
+                ),
+                TextSpan(text: '\nour '),
+                TextSpan(
+                  text: 'Terms and Conditions',
+                  style: TextStyle(
+                    color: Colors.blue,
+                    decoration: TextDecoration.underline,
+                  ),
+                  recognizer: TapGestureRecognizer()..onTap = () {
+                    // Handle Terms and Conditions tap
+                  },
+                ),
+              ],
+            ),
+          )
         ],
       ),
     );

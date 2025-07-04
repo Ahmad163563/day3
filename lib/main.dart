@@ -1,3 +1,4 @@
+import 'package:day3/User_Side/Dashboard/Dasshboard_Screen.dart';
 import 'package:day3/User_Side/Login_Signup_Screen/Login_Screen/Login_Screen.dart';
 import 'package:day3/User_Side/Login_Signup_Screen/Verification/Verification_Screen.dart';
 import 'package:day3/User_Side/Login_Signup_Screen/otp_screen/Otp_Screen.dart';
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         //colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         //useMaterial3: true,
      // ),
-      home: VerificationScreen()//OtpScreen()//RegisterScreen()//LoginScreen()//SplashScreen()//const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: DashboardScreen()//VerificationScreen()//OtpScreen()//RegisterScreen()//LoginScreen()//SplashScreen()//const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
