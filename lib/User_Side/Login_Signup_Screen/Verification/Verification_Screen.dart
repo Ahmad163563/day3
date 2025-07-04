@@ -29,13 +29,25 @@ class _VerificationScreenState extends State<VerificationScreen> {
               ),
             ),
           ),
-          SizedBox(height: 40,),
+          SizedBox(height: 80,),
           Text('Verification Done!',style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 35,
             color: Colors.black
           ),),
-          Text('Dear user your account has been created'\n)
+          SizedBox(height: 15,),
+          Text('Dear user your account has been created\nsuccessfully.Continue to start using app',style: TextStyle(fontSize: 13,fontWeight: FontWeight.w400,color: Color(0xCC1C1939)),),
+          TextButton(onPressed: (){}, child: Container(
+            height: 46,
+            width: 296,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(8),
+              color: Color(0xff00AEEF)
+            ),
+            child: Center(
+              child: Text(''),
+            ),
+          ))
         ],
       ),
     );
