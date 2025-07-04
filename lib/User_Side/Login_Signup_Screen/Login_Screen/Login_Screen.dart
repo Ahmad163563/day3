@@ -37,14 +37,6 @@ class _LoginScreenState extends State<LoginScreen> {
                     decoration: BoxDecoration(
                       color: Colors.grey[200],
                       borderRadius: BorderRadius.circular(10),
-                      // boxShadow: [
-                      //   BoxShadow(
-                      //     color: Colors.black.withOpacity(0.1), // halki shadow
-                      //     spreadRadius: 1, // shadow ka size
-                      //     //blurRadius: 5,   // softness
-                      //     offset: Offset(0, 3), // x and y direction (downward shadow)
-                      //   ),
-                      // ],
                     ),
                     child: TextField(
                       decoration: InputDecoration(
@@ -66,14 +58,6 @@ class _LoginScreenState extends State<LoginScreen> {
                     decoration: BoxDecoration(
                       color: Colors.grey[200],  //color: Colors.grey,
                       borderRadius: BorderRadius.circular(10),
-                      //boxShadow: [
-                       // BoxShadow(
-                        //  color: Colors.black.withOpacity(0.1), // halki shadow
-                         // spreadRadius: 1, // shadow ka size
-                          //blurRadius: 5,   // softness
-                          //offset: Offset(0, 3), // x and y direction (downward shadow)
-                        //),
-                      //],
                     ),
                     child: TextField(
                       decoration: InputDecoration(
