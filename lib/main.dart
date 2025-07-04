@@ -5,6 +5,7 @@ import 'package:day3/User_Side/Login_Signup_Screen/Verification/Verification_Scr
 import 'package:day3/User_Side/Login_Signup_Screen/otp_screen/Otp_Screen.dart';
 import 'package:day3/User_Side/Login_Signup_Screen/register_screen/register_screen.dart';
 import 'package:day3/User_Side/Splash_Screen/splash-screen.dart';
+import 'package:day3/User_Side/click_hospital_screen/click_hospital_scree.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
         //colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         //useMaterial3: true,
      // ),
-      home: AddScreen()//DashboardScreen()//VerificationScreen()//OtpScreen()//RegisterScreen()//LoginScreen()//SplashScreen()//const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: clickhospital()//AddScreen()//DashboardScreen()//VerificationScreen()//OtpScreen()//RegisterScreen()//LoginScreen()//SplashScreen()//const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }

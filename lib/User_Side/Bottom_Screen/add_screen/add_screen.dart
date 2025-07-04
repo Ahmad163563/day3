@@ -55,7 +55,7 @@ class _AddScreenState extends State<AddScreen> {
               Container(
                   height: 190,
                   width: 350,
-                  color: Colors.grey[200],
+                  color: Colors.grey[100],
                   child: Column(
                       children: [
                         Row(
@@ -125,7 +125,7 @@ class _AddScreenState extends State<AddScreen> {
               Container(
                   height: 190,
                   width: 350,
-                  color: Colors.grey[200],
+                  color: Colors.grey[100],
                   child: Column(
                       children: [
                         Row(
@@ -195,7 +195,7 @@ class _AddScreenState extends State<AddScreen> {
               Container(
                   height: 190,
                   width: 350,
-                  color: Colors.grey[200],
+                  color: Colors.grey[100],
                   child: Column(
                       children: [
                         Row(
@@ -265,7 +265,7 @@ class _AddScreenState extends State<AddScreen> {
               Container(
                   height: 190,
                   width: 350,
-                  color: Colors.grey[200],
+                  color: Colors.grey[100],
                   child: Column(
                       children: [
                         Row(

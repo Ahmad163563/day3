@@ -1,3 +1,4 @@
+import 'package:day3/User_Side/Bottom_Screen/add_screen/add_screen.dart';
 import 'package:flutter/material.dart';
 
 class DashboardScreen extends StatefulWidget {
@@ -9,7 +10,9 @@ class DashboardScreen extends StatefulWidget {
 
 class _DasshboardScreenState extends State<DashboardScreen> {
   int selectedindex=0;
-  
+  List pages=[
+    AddScreen()
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
