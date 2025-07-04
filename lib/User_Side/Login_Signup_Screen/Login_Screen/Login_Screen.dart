@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+//import 'package:hexcolor/hexcolor.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -11,25 +12,113 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Center(
-            child: Image.asset('assets/Group 5.png'),
-          ),
-          Column(
+      body:  SafeArea(
+        child:  SingleChildScrollView(
+          child: Column(
             children: [
-              Text('Username'),
-              Container(
-                height: 65,
-                width: 322,
+              SizedBox(height: 110,),
+              Center(
+                child: Image.asset('assets/Group 5.png'),
+              ),
+              SizedBox(height: 40,),
+              Column(
+                children: [
+                  Row(
+                    children: [
+                      SizedBox(width: 28,),
+                      Text('Username',style: TextStyle(color: Colors.grey[600],fontWeight: FontWeight.w700),),
+                    ],
+                  ),
+                  //SizedBox(height: 5,),
+                  Container(
+                    alignment: Alignment.centerLeft,
+                    height: 65,
+                    width: 322,
+                    decoration: BoxDecoration(
+                      color: Colors.grey[200],
+                      borderRadius: BorderRadius.circular(10),
+                      // boxShadow: [
+                      //   BoxShadow(
+                      //     color: Colors.black.withOpacity(0.1), // halki shadow
+                      //     spreadRadius: 1, // shadow ka size
+                      //     //blurRadius: 5,   // softness
+                      //     offset: Offset(0, 3), // x and y direction (downward shadow)
+                      //   ),
+                      // ],
+                    ),
+                    child: TextField(
+                      decoration: InputDecoration(
+                        border: InputBorder.none
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 20,),
+                  Row(
+                    children: [
+                      SizedBox(width: 28,),
+                      Text('Password',style: TextStyle(color: Colors.grey[600],fontWeight: FontWeight.w700),),
+                    ],
+                  ),
+                  Container(
+                    alignment: Alignment.centerLeft,
+                    height: 65,
+                    width: 322,
+                    decoration: BoxDecoration(
+                      color: Colors.grey[200],  //color: Colors.grey,
+                      borderRadius: BorderRadius.circular(10),
+                      //boxShadow: [
+                       // BoxShadow(
+                        //  color: Colors.black.withOpacity(0.1), // halki shadow
+                         // spreadRadius: 1, // shadow ka size
+                          //blurRadius: 5,   // softness
+                          //offset: Offset(0, 3), // x and y direction (downward shadow)
+                        //),
+                      //],
+                    ),
+                    child: TextField(
+                      decoration: InputDecoration(
+                          border: InputBorder.none
+                      ),
+                    ),
+                  )
+                ],
+              ),
+              SizedBox(height: 10,),
+              Center(
+                child: Text('Dont have a account?',style: TextStyle(color: Colors.grey[600],fontWeight: FontWeight.w700),),
+              ),
+              SizedBox(height: 30,),
+              TextButton(onPressed: (){}, child: Container(
+                height: 46,
+                width: 296,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  border: Border.all(color: Colors.grey),
+                  color: Color(0xFF00AEFF),//color: HexColor('#0D5EA6'),
+                ),
+                child: Center(
+                  child: Text('Login',style: TextStyle(color: Colors.white),),
+                ),
+              )),
+              SizedBox(height: 70,),
+              TextButton(
+                onPressed: (){},
+                child: Center(
+                  child: Container(
+                    height: 40,
+                    width: 290,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(8),
+                        color: Color(0xFF00AEFF),
+                    ),
+                    child: Center(
+                      child: Text('Partner with us',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white),),
+                    ),
+                  ),
                 ),
               )
             ],
-          )
-        ],
+          ),
+        ),
       ),
     );
   }

@@ -1,3 +1,4 @@
+import 'package:day3/User_Side/Login_Signup_Screen/Login_Screen/Login_Screen.dart';
 import 'package:day3/User_Side/Splash_Screen/splash-screen.dart';
 import 'package:flutter/material.dart';
 
@@ -13,12 +14,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: SplashScreen()//const MyHomePage(title: 'Flutter Demo Home Page'),
+      //title: 'Flutter Demo',
+      //theme: ThemeData(
+        //colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        //useMaterial3: true,
+     // ),
+      home: LoginScreen()//SplashScreen()//const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
