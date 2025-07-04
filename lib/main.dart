@@ -1,4 +1,4 @@
-import 'package:day3/Splash_Screen/splash-screen.dart';
+import 'package:day3/User_Side/Splash_Screen/splash-screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
