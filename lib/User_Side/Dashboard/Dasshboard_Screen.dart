@@ -136,17 +136,32 @@ class _DasshboardScreenState extends State<DashboardScreen> {
                       color: Colors.blue,
                       fontSize: 33,
                       fontWeight: FontWeight.bold
-
                     ),
-                    
-
                   ),
                 ],
               ),
-
-                )
+            )
               ],
             ),
+                Row(
+                  children: [
+                    Icon(Icons.location_on_outlined,color: Colors.red,),
+                    Column(
+                      children: [
+                        Text('Istanbul',style: TextStyle(
+                          fontWeight: FontWeight.bold
+                        ),),
+                        Container(
+                          color: Colors.blue,
+                          child: Center(
+                            child: Text('Available',style: TextStyle(color: Colors.white),),
+                          ),
+                        )
+                      ],
+                    ),
+                    
+                  ],
+                )
     ]))
         ],
       ),
