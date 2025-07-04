@@ -35,7 +35,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     height: 65,
                     width: 322,
                     decoration: BoxDecoration(
-                      color: Colors.grey[200],
+                      color: Colors.grey[50],
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: TextField(
@@ -56,7 +56,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     height: 65,
                     width: 322,
                     decoration: BoxDecoration(
-                      color: Colors.grey[200],  //color: Colors.grey,
+                      color: Colors.grey[50],  //color: Colors.grey,
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: TextField(
